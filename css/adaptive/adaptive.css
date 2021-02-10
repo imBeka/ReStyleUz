@@ -177,6 +177,9 @@
   .section__info_p {
     font-size: .9em;
   }
+  .carousel__info_caption {
+        font-size: 1em;
+    }
 }
 
 @media only screen and (max-width: 500px) {
