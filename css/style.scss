@@ -1,0 +1,364 @@
+$blue: #3dbce2;
+$pink: #fe386a;
+$grey: #303030;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style-type: none;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+}
+
+body {
+    overflow-x: hidden
+}
+
+.btn_about {
+    margin-top: 5%;
+}
+
+.dn {
+    display: none;
+}
+
+// HEADER
+.header__blue {
+    background-color: $blue;
+    height: 40px;
+    width: 100%;
+    .header {
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            z-index: 5;
+            width: 115px;
+        }
+
+        nav {
+            height: 40px;
+        }
+
+        .header__nav {
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+            .header__nav_item {
+                // padding: 10px 0 10px 15px;
+                padding: 2% 0;
+                padding-left: 15px;
+                text-align: center;
+                &::after {
+                    content: '';
+                    padding: 0 10px;
+                    border-right: white solid 1px;
+                }
+                &:hover {
+                    background-color: #0f8fb6;
+                    transition: .3s ease-in;
+                }
+                &:last-child::after {
+                    border: none;
+                    margin: 0;
+                    // padding: 0;
+                }
+                
+                a {
+                    font-family: 'Roboto', sans-serif;
+                    color: white;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.header__info {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    margin-right: 10%;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+
+}
+.arrow {
+    width: 15px;
+}
+
+.portfolio,
+.call {
+    margin-right: 3%;
+
+    p {
+        font-size: 125%;
+        margin-bottom: 0;
+        text-transform: uppercase;
+        color: $grey;
+    }
+}
+
+.portfolio-bottom {
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    a {
+        font-size: 12.5px;
+        text-transform: lowercase;
+        color: $pink;
+        text-decoration: none;
+        border-bottom: 1px dotted $pink;
+    }
+}
+
+.icon {
+    width: 13px;
+    color:$pink;
+}
+
+.btn {
+    padding: 10px 15px;
+    background-color: $pink;
+    border-radius: 5px;
+
+    a {
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+}
+
+
+// CAROUSEL 
+
+.carousel {
+    position: relative;
+}
+
+.item {
+    .carousel_item {
+        // width: 100%;
+        height: 80vh;
+    }
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 10%;
+    h1 {
+        font-family: 'Open Sans', sans-serif;
+        text-transform: uppercase;
+    }
+    p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.3em;
+    }
+}
+
+.carousel__info_caption {
+    font-size: 1.5em;
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 15%;
+}
+
+.triangle {
+    box-sizing: border-box;
+    width: 0;
+    height: 0;
+    border-bottom: 15vh solid #fff;
+    border-left: 100vw solid transparent;
+    border-right: 0 solid transparent;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
+.triangle_reverse {
+    box-sizing: border-box;
+    width: 0;
+    height: 0;
+    border-top: 15vh solid #fff;
+    border-right: 100vw solid transparent;
+    border-left: 0 solid transparent;
+    position: absolute;
+    z-index: 1;
+}
+
+
+// BENEFITS SECTION
+.benefits {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .benefits__info {
+        text-align: center;
+
+        h1 {
+            text-transform: uppercase;
+        }
+        p {
+            margin: 2em;
+        }
+    }
+
+    .benefits__icons {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        .benefits__item {
+            margin: .5em;
+
+            img {
+                width: 50%;
+                margin: .5em;
+            }
+        }
+    }
+}
+
+
+// EYELASHES SECTION
+.eyelashes {
+    background-image: url('https://www.fpeople.net/uploads/casting_images/580/5c225ed3edc312.57325669.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    position: relative;
+    display: flex;
+    text-align: center;
+
+    .section__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 15vh 0;
+
+        h2 {
+            text-transform: uppercase;
+            margin-bottom: 1.5em;
+        }
+
+        .section__info_about {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+
+            .section__info_p {
+                max-width: 50%;
+                min-width: 225px;
+                text-align: left;
+            }
+        }
+    }
+}
+
+
+// MANECURE SECTION
+.manecure {
+    position: relative;
+    display: flex;
+    text-align: center;
+
+    .section__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h2 {
+            text-transform: uppercase;
+            margin-bottom: 1.5em;
+        }
+
+        .section__info_about {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+
+
+            .section__info_p {
+                max-width: 50%;
+                min-width: 225px;
+                text-align: left;
+            }
+        }
+    }
+}
+
+// ABOUT SECTION
+.about__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .about__info_text {
+        h3 {
+            font-size: 30px;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+        }
+        p {
+        }
+        margin-bottom: 30px;
+    }
+
+    .video > img {
+        width: 60%;
+    }
+}
+
+
+
+#map {
+    height: 500px;
+    width: 100%;
+}
+
+
+// FOOTER
+.footer {
+    height: 80px;
+    width: 100%;
+    background-color: $grey;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}

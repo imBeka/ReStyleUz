@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salon</title>
+    <!-- CSS OWL CAROUSEL -->
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    
+    <!-- STYLES -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/adaptive/adaptive.css">
+</head>
+<body>
+    <header>
+        <div class="header__blue">
+            <div class="container">
+                <div class="header">
+                    <img src="src/logo.png" alt="not found">
+                    <nav>
+                        <ul class="header__nav">
+                            <li class="header__nav_item"><a href="#">Наращивание</a></li>
+                            <li class="header__nav_item"><a href="#">Маникюр</a></li>
+                            <li class="header__nav_item"><a href="#">Дипеляция</a></li>
+                            <li class="header__nav_item"><a href="#">О салоне</a></li>
+                            <li class="header__nav_item"><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+                <div class="header__info">
+                    <div class="portfolio">
+                        <p>Наше портфолто</p>
+                        <div class="portfolio-bottom">
+                            <img src="img/suitcase.png" alt="Not Found" class="icon" />
+                            <img src="img/right-arrow.svg" alt="arrow" class="arrow">
+                            <a href="#">Наши работы</a>
+                        </div>
+                    </div>
+
+                    <div class="call">
+                        <p>+998 99 999 99 99</p>
+                        <div class="portfolio-bottom">
+                            <img src="img/telephone.png" alt="Not Found" class="icon" />
+                            <img src="img/right-arrow.svg" alt="arrow" class="arrow">
+                            <a href="#">Позвонить сейчас</a>
+                        </div>
+                    </div>
+
+                    <div class="btn">
+                        <a href="#">Записаться Онлайн</a>
+                    </div>
+
+                    <div class="wrapper">
+                        <input type="checkbox" id="checkbox" class="wrapper__checkbox">
+                        <label for="checkbox" class="wrapper__button">
+                            <span class="wrapper__button-line"></span>
+                            <span class="wrapper__button-line"></span>
+                            <span class="wrapper__button-line"></span>
+                        </label>
+                        <div class="wrapper__menu">
+                            <a href="#" class="wrapper__menu-link">Наращивание</a>
+                            <a href="#" class="wrapper__menu-link">Маникюр</a>
+                            <a href="#" class="wrapper__menu-link">Дипеляция</a>
+                            <a href="#" class="wrapper__menu-link">О салоне</a>
+                            <a href="#" class="wrapper__menu-link">Контакты</a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </header>
+
+    <section class="carousel">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img class="carousel_item" src="img/salon/main.jpg" alt="Chania">
+                    <div class="carousel-caption">
+                        <div class="carousel__info">
+                            <div class="carousel__info_caption">
+                                <h1>Салон красоты в Ташкенте!</h1>
+                                <p>
+                                    Наращивание и химю завивка ресниц.Маникюр, аппаратный педикюр Shellac. Укрепление и наращивание ногтей Bio Sculpture Gel
+                                </p>
+                            </div>
+                            <div class="carousel__info_apply">
+                                <!-- apply form -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img class="carousel_item" src="img/salon/view.jpg" alt="Chania">
+                    <div class="carousel-caption">
+                        <h3>Chania</h3>
+                        <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img class="carousel_item" src="img/salon/inside.jpg" alt="Flower">
+                    <div class="carousel-caption">
+                        <h3>Flowers</h3>
+                        <p>Beautiful flowers in Kolymbari, Crete.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <div class="triangle"></div>
+    </section>
+
+    <section class="container">
+        <div class="benefits">
+            <div class="benefits__info">
+                <h1>Примущества салона</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur nisi mollitia quia distinctio, laudantium architecto eos vel dolor suscipit asperiores, vitae reprehenderit doloremque dolores odio minus, dolore quibusdam iste quae tempore accusantium quod iure! Suscipit labore iste quibusdam. Saepe quasi quos dolorem similique natus nemo incidunt mollitia dolor voluptatibus in illo accusantium magni aliquam nobis quod quidem reprehenderit, vitae autem eius. Deserunt, cupiditate modi ex ad magni sequi? Ipsum sint, error, dignissimos, ut magni quis perferendis tempore officiis explicabo iure laudantium fuga mollitia non! Ipsam totam maxime ex provident similique iusto repellat, fuga exercitationem vitae sunt. Explicabo dolore unde dicta.</p>
+            </div>
+            <div class="benefits__icons">
+                <div class="benefits__item">
+                    <img src="img/benefit_icon.png" alt="#">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+
+                <div class="benefits__item">
+                    <img src="img/benefit_icon.png" alt="#">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+
+                <div class="benefits__item">
+                    <img src="img/benefit_icon.png" alt="#">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+
+                <div class="benefits__item">
+                    <img src="img/benefit_icon.png" alt="#">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+
+                <div class="benefits__item">
+                    <img src="img/benefit_icon.png" alt="#">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+
+                <div class="benefits__item">
+                    <img src="img/benefit_icon.png" alt="#">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+
+                <div class="benefits__item">
+                    <img src="img/benefit_icon.png" alt="#">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="eyelashes">
+        <div class="triangle_reverse"></div>
+
+        <div class="container">
+            <div class="section__info">
+                <h2>Наращивание ресниц</h2>
+                <div class="section__info_about">
+                    <img class="photo_about" src="img/eyelash.png" alt="#">
+                    <div class="section__info_p">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi fugiat reiciendis accusantium, nemo veritatis nam nihil eaque unde sint. Itaque commodi quisquam, delectus labore porro doloremque dicta sunt eveniet enim atque amet, doloribus dolores? Asperiores laudantium, animi dolor consequatur, fugiat perspiciatis officia omnis commodi obcaecati quia sint consequuntur iste quae.</p>
+                        <div class="btn btn_about">
+                            <a href="#">Заказать консультацию!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="triangle"></div>
+    </section>
+
+    <section class="manecure">
+
+        <div class="container">
+            <div class="section__info">
+                <h2>Наращивание ресниц</h2>
+                <div class="section__info_about">
+                    <img class="photo_about" src="img/eyelash.png" alt="#">
+                    <div class="section__info_p">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi fugiat reiciendis accusantium, nemo veritatis nam nihil eaque unde sint. Itaque commodi quisquam, delectus labore porro doloremque dicta sunt eveniet enim atque amet, doloribus dolores? Asperiores laudantium, animi dolor consequatur, fugiat perspiciatis officia omnis commodi obcaecati quia sint consequuntur iste quae.</p>
+                        <div class="btn btn_about">
+                            <a href="#">Заказать консультацию!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="eyelashes">
+        <div class="triangle_reverse"></div>
+
+        <div class="container">
+            <div class="section__info">
+                <h2>педикюр</h2>
+                <div class="section__info_about">
+                    <img class="photo_about" src="img/eyelash.png" alt="#">
+                    <div class="section__info_p">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi fugiat reiciendis accusantium, nemo veritatis nam nihil eaque unde sint. Itaque commodi quisquam, delectus labore porro doloremque dicta sunt eveniet enim atque amet, doloribus dolores? Asperiores laudantium, animi dolor consequatur, fugiat perspiciatis officia omnis commodi obcaecati quia sint consequuntur iste quae.</p>
+                        <div class="btn btn_about">
+                            <a href="#">Заказать консультацию!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="triangle"></div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <div class="about__info">
+                <div class="about__info_text">
+                    <h3>О нашем салоне</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, maxime?</p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Culpa suscipit perferendis consequatur id, sed fuga nulla
+                        pariatur ullam dolor nam, a voluptate sit soluta magni
+                        porro, totam dolorem nisi maiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum illo ipsum, commodi provident incidunt autem!
+                    </p>
+                </div>
+                <div class="video">
+                    <!-- <img src="img/salon/inside.jpg" alt=""> -->
+                    <video preload="metadata" controls width="100%" src="./src/salon/video/IMG_9526.MP4"></video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <section class="map">
+            <div class="triangle_reverse"></div>
+            <div id="map"></div>
+        </section>
+
+        <section class="footer">
+            <div class="rights">
+                <p>2021 Все права защищены</p>
+            </div>
+        </section>
+    </footer>
+
+    
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhAR-MJBwhSp4StUW1G9zOL0vBRAUBnYI&callback=initMap&libraries=&v=weekly"
+    async
+    ></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
